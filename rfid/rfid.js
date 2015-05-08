@@ -12,6 +12,9 @@ var rfidlib = require('rfid-pn532');
 
 var rfid = rfidlib.use(tessel.port['A']); 
 
+rfid.setPollPeriod( 500, function (err) {console.log(err)});
+//sets polling time to 500 milliseconds (which is default)
+
 rfid.on('ready', function (version) {
   console.log('Ready to read RFID card');
 

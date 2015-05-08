@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "accel-mma84": "^0.2.4",
+    "camera-vc0706": "^0.1.8",
+    "rfid-pn532": "^0.1.7",
+    "servo-pca9685": "^0.1.3"
+  }
 }
