@@ -1,0 +1,10 @@
+<section id="home">
+    <h1>MugShots</h1>
+    <ul>
+        <li ng-repeat="picture in firebase | orderBy: '-timestamp'">
+            <h2>{{ picture.timestamp }}</h2>
+            <h2>{{ picture.userId }}</h2>
+            <img src="data:image/jpg;base64,{{ picture.base64 }}">
+        </li>
+    </ul>
+</section>
